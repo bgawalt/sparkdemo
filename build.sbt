@@ -23,8 +23,8 @@ libraryDependencies ++= Seq(
   "commons-beanutils" % "commons-beanutils" % "1.8.3",
   "commons-beanutils" % "commons-beanutils-core" % "1.8.3",
   "commons-configuration" % "commons-configuration" % "1.10",
-  "org.slf4j" % "jcl-over-slf4j" % "1.7.7",
-  "org.eclipse.jetty" % "jetty-plus" % "9.2.1.v20140609"
+  "org.slf4j" % "jcl-over-slf4j" % "1.7.7"
+  //"org.eclipse.jetty" % "jetty-plus" % "9.2.1.v20140609"
 )
 
 // dependencyOverrides += "commons-logging" % "commons-logging" % "1.0.4"
