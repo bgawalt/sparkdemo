@@ -43,6 +43,7 @@ mergeStrategy in assembly <<= (mergeStrategy in assembly) { (old) =>
 {
   case PathList("META-INF","mailcap", xs @ _*)         => MergeStrategy.first
   case PathList("META-INF","ECLIPSEF.RSA", xs @ _*)         => MergeStrategy.first
+  case x if x.startsWith("plugin.properties") => MergeStrategy.last
   case x => old(x)
 }
 }
